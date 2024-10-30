@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: 🗂️ Getting started
 type: docs
 next: docs/folder/leaf
 weight: 1
