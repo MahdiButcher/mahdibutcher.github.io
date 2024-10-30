@@ -15,7 +15,18 @@ markup:
   # enable hextra syntax highlight
   highlight:
     noClasses: false
-
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: internet's butcher
+  fa:
+    languageName: فارسی
+    languageCode: fa
+    languageDirection: rtl
+    weight: 3
+    title: قصاب اینترنت
 menu:
   main:
     - name: Docs
@@ -24,23 +35,18 @@ menu:
     - name: About
       pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: Contribute
+      url: "https://github.com/MahdiButcher/mahdibutcher.github.io"
       weight: 3
     - name: Search
       weight: 4
       params:
         type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
-      params:
-        icon: github
-    - name: Twitter
+    - name: Telegram
       weight: 6
-      url: "https://twitter.com/"
+      url: "https://t.me/MahdiButcher"
       params:
-        icon: x-twitter
+        icon: telegram
 
 params:
   navbar:
@@ -52,5 +58,5 @@ params:
     displayPoweredBy: false
 
   editURL:
-    enable: false
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    enable: true
+    base: "https://github.com/MahdiButcher/mahdibutcher.github.io/edit/main/content"
