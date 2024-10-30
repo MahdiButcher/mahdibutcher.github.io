@@ -1,5 +1,7 @@
 # Hugo configuration file
-title: My Site
+baseURL: "https://mahdibutcher.github.io"
+title: internet Butcher
+
 
 # import hextra as module
 module:
@@ -20,7 +22,7 @@ languages:
   en:
     languageName: English
     weight: 1
-    title: internet's butcher
+    title: internet butcher
   fa:
     languageName: فارسی
     languageCode: fa
