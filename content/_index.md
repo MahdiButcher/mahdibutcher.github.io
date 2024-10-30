@@ -2,11 +2,12 @@
 title: Home
 layout: home
 ---
-{{< hextra/hero-badge >}}
+  {{< hextra/hero-badge >}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
   <span>Empowering Internet Freedom</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
-{{< /hextra/hero-badge >}}
+  {{< /hextra/hero-badge >}}
+
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
@@ -21,6 +22,5 @@ layout: home
 </div>
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="Join the Movement" link="docs" >}} 
-{{< hextra/hero-button text="Join the Movement" link="docs" >}}
+{{< hextra/hero-button text="Read Docs" link="docs" >}} 
 </div>
