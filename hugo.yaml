@@ -40,7 +40,7 @@ menu:
       weight: 6
       url: "https://twitter.com/"
       params:
-        icon: telegram
+        icon: x-twitter
 
 params:
   navbar:
