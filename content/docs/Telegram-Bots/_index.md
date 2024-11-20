@@ -12,5 +12,6 @@ sidebar:
 {{< cards >}}
     {{< card link="../marzban/mirzabot" title="MirzaBot" icon="telegram">}}
     {{< card link="../callout" title="Zanboor" icon="telegram">}}
+    {{< card link="../callout" title="WatchDog" icon="telegram">}}
 {{< /cards >}}
 
