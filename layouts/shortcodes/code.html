@@ -1,0 +1,65 @@
+<div class="code-block-container">
+  <pre><code class="language-{{ .Get "language" }}">{{ .Inner }}</code></pre>
+  <button class="copy-btn" data-clipboard-text="{{ .Inner }}">Copy</button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const clipboard = new ClipboardJS('.copy-btn');
+    
+    clipboard.on('success', function(e) {
+      e.trigger.textContent = 'Copied!';
+      setTimeout(function() {
+        e.trigger.textContent = 'Copy';
+      }, 1500);
+    });
+    
+    clipboard.on('error', function(e) {
+      e.trigger.textContent = 'Failed!';
+      setTimeout(function() {
+        e.trigger.textContent = 'Copy';
+      }, 1500);
+    });
+  });
+</script>
+
+<style>
+  .code-block-container {
+    direction: ltr;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  pre {
+    background: #282c34;
+    color: #f8f8f2;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 10;
+  }
+
+  .copy-btn:hover {
+    background-color: #45a049;
+  }
+
+  .copy-btn:active {
+    background-color: #388e3c;
+  }
+</style>

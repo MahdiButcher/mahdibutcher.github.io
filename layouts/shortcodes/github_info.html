@@ -1,0 +1,20 @@
+{{ $repoOwner := .Get "owner" }}
+{{ $repoName := .Get "repo" }}
+{{ $url := printf "https://api.github.com/repos/%s/%s" $repoOwner $repoName }}
+
+{{ $response := getJSON $url }}
+{{ with $response }}
+  <div class="github-info">
+    <p><strong>Stars:</strong> {{ .stargazers_count }}</p>
+    
+    {{ $contributorsUrl := printf "https://api.github.com/repos/%s/%s/contributors" $repoOwner $repoName }}
+    {{ $contributors := getJSON $contributorsUrl }}
+    {{ with index $contributors 0 }}
+      <p><strong>Last Contributor:</strong> {{ .login }}</p>
+    {{ else }}
+      <p><strong>Last Contributor:</strong> Not available</p>
+    {{ end }}
+  </div>
+{{ else }}
+  <p>Could not fetch data from GitHub.</p>
+{{ end }}

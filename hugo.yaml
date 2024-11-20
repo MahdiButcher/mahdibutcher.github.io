@@ -31,13 +31,16 @@ languages:
     title: قصاب اینترنت
 menu:
   main:
-    - name: Docs
+    - identifier: Docs
+      name: Docs
       pageRef: /docs
       weight: 1
-    - name: About
+    - identifier: About
+      name: About
       pageRef: /about
       weight: 2
-    - name: Contribute
+    - identifier: Contribute
+      name: Contribute
       url: "https://github.com/MahdiButcher/mahdibutcher.github.io"
       weight: 3
     - name: Search
@@ -56,7 +59,7 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: true
+    displayCopyright: false
     displayPoweredBy: false
 
   editURL:
