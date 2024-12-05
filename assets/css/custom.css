@@ -7,7 +7,7 @@
 .cl {
     font-family: 'Hack';
 }
-* {
+html[lang="fa"] {
     font-family: 'Vazirmatn', Times, serif;
 }
 
